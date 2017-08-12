@@ -408,7 +408,7 @@ class RepoHook(BotPlugin):
                     identifier = self.build_identifier(room)
                     if hasattr(self, 'join_room'):
                         self.join_room(identifier, username=config.CHATROOM_FN)
-                    self.send(identifier, message, message_type='groupchat')
+                    self.send(identifier, message)
         response.status = 204
         return None
 
